@@ -26,7 +26,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
 }) => {
 
     return (
-        <div className='relative w-[calc(100vw/3.5)] h-[444px] shrink-0'>
+        <div className='relative w-full md:w-[calc(100vw/3.5)] h-[444px] shrink-0'>
             {/* First div (visible by default) */}
             <div className='absolute top-0 left-0 w-full h-full transition-opacity duration-300 ease-in-out hover:opacity-0'>
                 <Image
@@ -35,7 +35,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
                     width={396}
                     height={444}
                     placeholder='blur'
-                    className='object-cover w-full h-full'
+                    className='object-cover w-[396px] h-[444px]'
                 />
                 <div className='absolute w-full bottom-0 bg-black text-white text-center py-4'>
                     <p className='text-xl font-semibold'>{name}</p>
@@ -46,8 +46,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
             {/* Second div (visible on hover) */}
             <div className='absolute top-0 left-0 bg-white w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out'>
                 <div className='flex flex-col justify-between h-full'>
-                    <div className='p-6'>
-                        <p className='text-xl font-normal text-center'>{description}</p>
+                    <div className='p-6 flex text-center'>
+                        <p className='text-base font-normal text-center'>{description}</p>
                     </div>
                     <div className={`bg-[${bgColor}] text-white text-center py-4`}>
                         <p className='text-xl font-semibold'>{name}</p>
@@ -61,7 +61,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
 
 const TeamDescription: React.FC = () => {
     return (
-        <div className='flex gap-4 flex-nowrap w-full'>
+        <div className='flex flex-col md:flex-row gap-4 flex-nowrap w-full'>
             <TeamMemberCard
                 imageSrc={lois}
                 name="Lois Chizi-Boms"

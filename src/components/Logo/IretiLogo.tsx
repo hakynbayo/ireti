@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 import { cn } from '@/lib/utils';
 
-const BvndleLogo: React.FC<{
+const IretiLogo: React.FC<{
   variant: 'blue' | 'white';
   className?: string;
 }> = ({ className }) => {
   return (
     <span
-      className={cn('relative block aspect-[39/10] w-20 lg:w-48 xl:w-52', [
+      className={cn('relative block aspect-[39/10] w-32 lg:w-48 xl:w-52', [
         className && className,
       ])}
     >
@@ -23,4 +23,4 @@ const BvndleLogo: React.FC<{
   );
 };
 
-export default BvndleLogo;
+export default IretiLogo;

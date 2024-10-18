@@ -29,11 +29,11 @@ const UpcomingEvents = () => {
                     Upcoming Events
                 </p>
 
-                <p className='text-5xl font-bold text-white w-[60%]'>
+                <p className='text-5xl font-bold text-white w-full md:w-[60%]'>
                     The December Project 2024
                 </p>
 
-                <p className='text-xl font-normal text-white w-[85%]'>
+                <p className='text-xl font-normal text-white w-[95%] md:w-[85%]'>
                     The December Project offers support to vulnerable and disadvantaged
                     individuals by distributing food, clothing, shoes, and books.
                 </p>
