@@ -32,10 +32,10 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
                 <Image
                     src={imageSrc}
                     alt={name}
-                    width={396}
+                    width={414}
                     height={444}
                     placeholder='blur'
-                    className='object-cover w-[396px] h-[444px]'
+                    className='object-cover w-[414px] h-[444px]'
                 />
                 <div className='absolute w-full bottom-0 bg-black text-white text-center py-4'>
                     <p className='text-xl font-semibold'>{name}</p>
@@ -63,6 +63,14 @@ const TeamDescription: React.FC = () => {
     return (
         <div className='flex flex-col md:flex-row gap-4 flex-nowrap w-full'>
             <TeamMemberCard
+                imageSrc={adeyemo}
+                name="Folashade Adeyemo"
+                title="Executive Director and Founder"
+                description="Folashade Adeyemo is a dedicated Change Manager with five years of professional experience, committed to making a difference in society. Passionate about helping the underprivileged and homeless, she uses her skills to drive change in both professional and community settings. Folashade is also deeply invested in mentoring and supporting the mental well-being of children, inspiring the next generation."
+                bgColor="#00365E"
+            />
+
+            <TeamMemberCard
                 imageSrc={lois}
                 name="Lois Chizi-Boms"
                 title="Communications and Volunteer Manager"
@@ -82,13 +90,7 @@ const TeamDescription: React.FC = () => {
                 title="Lead Designer"
                 description="Ik Osemwota is a project manager with a passion for changing lives. Armed with a knowledge of delivering diverse projects, IK brings a fresh passion and drive to see the underprivileged gain access to basic amenities lacking in so many Nigerian communities. In her spare time, IK loves to watch crime shows and enjoys the occasional binge watching." bgColor="#00365E"
             />
-            <TeamMemberCard
-                imageSrc={adeyemo}
-                name="Folashade Adeyemo"
-                title="Executive Director and Founder"
-                description="Folashade Adeyemo is a dedicated Change Manager with five years of professional experience, committed to making a difference in society. Passionate about helping the underprivileged and homeless, she uses her skills to drive change in both professional and community settings. Folashade is also deeply invested in mentoring and supporting the mental well-being of children, inspiring the next generation."
-                bgColor="#00365E"
-            />
+
             <TeamMemberCard
                 imageSrc={olusayo}
                 name="Oluwasayo Oyenuga"

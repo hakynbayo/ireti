@@ -21,7 +21,7 @@ const Team = () => {
 
   return (
     <section
-      id='Testimonials'
+      id='TeamSection'
       className='overflow-hidden flex items-center justify-center bg-cover bg-no-repeat'
     >
       <section className='items-center justify-between bg-white gap-4 max-w-[1500px] p-0 md:p-10 overflow-x-hidden no-scrollbar'>

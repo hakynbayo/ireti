@@ -15,27 +15,43 @@ import GenModal from '@/components/modal/Modal';
 import { navbarItems } from '@/constant/data';
 
 const NavBar = ({ isHome }: { isHome?: boolean }) => {
-  const scrollToContact = () => {
-    scroller.scrollTo('Contacts', {
+  const scrollToAbout = () => {
+    scroller.scrollTo('ForYou', {
       duration: 500,
       delay: 0,
       smooth: 'easeInOut',
     });
   };
 
-  const scrollToTestimonial = () => {
-    scroller.scrollTo('Testimonials', {
+  const scrollToPrograms = () => {
+    scroller.scrollTo('ProgramsGallery', {
+      duration: 500,
+      delay: 0,
+      smooth: 'easeInOut',
+    });
+  };
+  const scrollToTeam = () => {
+    scroller.scrollTo('TeamSection', {
+      duration: 500,
+      delay: 0,
+      smooth: 'easeInOut',
+    });
+  };
+  const scrollToVolunteer = () => {
+    scroller.scrollTo('ChangeSection', {
+      duration: 500,
+      delay: 0,
+      smooth: 'easeInOut',
+    });
+  };
+  const scrollToFooter = () => {
+    scroller.scrollTo('Footer', {
       duration: 500,
       delay: 0,
       smooth: 'easeInOut',
     });
   };
 
-  const [isProductModalOpen, setIsProductModalOpen] = useState(false);
-
-  const toggleProductModal = () => {
-    setIsProductModalOpen(!isProductModalOpen);
-  };
 
   const isMobile = useMediaQuery('(max-width: 768px)');
   const [open, setOpen] = useState(false);
@@ -45,14 +61,21 @@ const NavBar = ({ isHome }: { isHome?: boolean }) => {
   };
 
   const handleButtonClick = (itemText: string) => {
-    if (itemText === 'Products') {
-      toggleProductModal();
+
+    if (itemText === 'Programs') {
+      scrollToPrograms();
     }
-    if (itemText === 'Testimonials') {
-      scrollToTestimonial();
+    if (itemText === 'About') {
+      scrollToAbout();
     }
-    if (itemText === 'Contacts') {
-      scrollToContact();
+    if (itemText === 'Team') {
+      scrollToTeam();
+    }
+    if (itemText === 'Volunteer') {
+      scrollToVolunteer();
+    }
+    if (itemText === 'Footer') {
+      scrollToFooter();
     }
     toggleModal(); // Close the modal after clicking any item
   };
@@ -98,7 +121,7 @@ const NavBar = ({ isHome }: { isHome?: boolean }) => {
             <div>
               <Button
                 onClick={() => {
-                  scrollToContact();
+                  scrollToAbout();
                   toggleModal();
                 }}
                 type='button'
@@ -149,7 +172,7 @@ const NavBar = ({ isHome }: { isHome?: boolean }) => {
           </div>
         )}
         <Button
-          onClick={scrollToContact}
+          onClick={scrollToFooter}
           type='button'
           className='ml-6 h-[45px] bg-[#065DA7] rounded-full'
         >

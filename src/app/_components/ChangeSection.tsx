@@ -7,6 +7,7 @@ import Button from '@/components/buttons/Button';
 const ChangeSection = () => {
   return (
     <div
+      id='ChangeSection'
       style={{
         backgroundImage: 'url("/images/folashade.png")',
       }}

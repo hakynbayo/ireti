@@ -10,7 +10,7 @@ import Oval from '../../../public/images/oval.png';
 
 const ForYou = () => {
   return (
-    <section className='max-w-[1500px] mx-auto bg-cover bg-no-repeat py-10 md:py-10'>
+    <section id='ForYou' className='max-w-[1500px] mx-auto bg-cover bg-no-repeat py-10 md:py-10'>
       <section className='flex flex-col items-start justify-between gap-10 py-10 px-4 md:flex-row md:justify-between md:items-center md:py-12 lg:px-8 xl:px-20'>
         <div className='relative w-full md:w-1/2 flex flex-col gap-14'>
           <div className='bg-bg-gray max-w-max py-3 px-4 rounded-md'>

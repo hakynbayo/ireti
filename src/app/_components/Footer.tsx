@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <section
       className='bg-white hidden md:block max-w-[1500px] w-full py-0 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-24'
-      id='Contacts'
+      id='Footer'
     >
       <div className='bg-white border-t border-black py-8'>
         <div className='flex flex-col md:flex-row justify-between items-center gap-4'>

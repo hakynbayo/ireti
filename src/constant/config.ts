@@ -1,5 +1,5 @@
 export const siteConfig = {
-  title: 'https://iretifoundation.com',
+  title: 'Ireti Foundation',
   description:
     'Providing essential support for those in need.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */

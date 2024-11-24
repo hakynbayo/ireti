@@ -5,13 +5,13 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import Dot from '../../../public/images/dot.png';
-import Papa from '../../../public/images/papa.png';
 import img3 from '../../../public/images/img3.png';
+import Papa from '../../../public/images/papa.png';
 import Soup from '../../../public/images/soup.png';
 
 const ForYou = () => {
   return (
-    <section className='max-w-[1500px] bg-cover bg-no-repeat py-10 md:py-10'>
+    <section id='ProgramsGallery' className='max-w-[1500px] bg-cover bg-no-repeat py-10 md:py-10'>
       <section className='relative flex flex-col items-start justify-between gap-10 py-10 px-4 md:flex-row md:justify-between md:py-12 lg:px-8 xl:px-20'>
         <div className='relative w-full md:w-[60%] flex flex-col gap-14'>
           <div className='bg-bg-gray max-w-max py-3 px-4 rounded-md'>
@@ -72,13 +72,13 @@ const ForYou = () => {
 
         <div className='relative w-full md:w-1/3 flex flex-col gap-4'>
           <p className='text-black text-3xl font-bold lg:text-5xl font-literata'>
-          Fun For Free
+            Fun For Free
           </p>
 
           <p className='text-black w-full font-normal text-base md:text-xl'>
-          Fun4Free is an engaging funfair targeted specifically at underprivileged children.
-          It provides a delightful experience for
-          the kids and also presents the gospel in an exciting and accessible manner.
+            Fun4Free is an engaging funfair targeted specifically at underprivileged children.
+            It provides a delightful experience for
+            the kids and also presents the gospel in an exciting and accessible manner.
           </p>
         </div>
       </section>
@@ -90,8 +90,8 @@ const ForYou = () => {
           </p>
 
           <p className='text-black w-full font-normal md:w-[75%] text-base md:text-xl'>
-          Our soup kitchen is aimed at offering
-          nutritious breakfast and dinner meals to those in need.
+            Our soup kitchen is aimed at offering
+            nutritious breakfast and dinner meals to those in need.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ const ForYou = () => {
           />
         </div>
       </section>
-      
+
     </section>
   );
 };
