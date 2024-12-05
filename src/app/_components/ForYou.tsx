@@ -1,14 +1,20 @@
 'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import Button from '@/components/buttons/Button';
 
 import Oval from '../../../public/images/oval.png';
+import Modal from '@/components/GetInTouchModal';
 
 const ForYou = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <section id='ForYou' className='max-w-[1500px] mx-auto bg-cover bg-no-repeat py-10 md:py-10'>
       <section className='flex flex-col items-start justify-between gap-10 py-10 px-4 md:flex-row md:justify-between md:items-center md:py-12 lg:px-8 xl:px-20'>
@@ -35,12 +41,15 @@ const ForYou = () => {
           </p>
           <Button
             type='button'
+            onClick={openModal}
             className='mt-8 max-w-max rounded-full px-6 py-2 text-white md:py-4 md:text-lg'
           >
             Get in touch with us
           </Button>
         </div>
       </section>
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
+
     </section>
   );
 };
